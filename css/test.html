@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .all-float {
+        background-color: palevioletred;
+    }
+    .fl {
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        display: inline-block;
+        float: left;
+    }
+    .fr{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        display: inline-block;
+        float: left;
+    }
+    .clearfix:before {
+        content: "Мишка очень любит... Но не мед";
+        display: block;
+    }
+    .clearfix::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+</style>
+<body>
+<div class="all-float clearfix">
+    <div class="fl"></div>
+    <div class="fr"></div>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, at, dicta dignissimos, dolorum enim iste labore molestiae nam reprehenderit suscipit temporibus unde veniam? Consequuntur error nihil nobis placeat voluptas.</p>
+</body>
+</html>
